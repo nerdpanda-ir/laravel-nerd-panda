@@ -1,0 +1,55 @@
+{
+    "name": "nerdpanda/nerd-panda",
+    "description": "my laravel create package practice",
+    "homepage": "https://github.com/nerdpanda-ir/laravel-nerd-panda",
+    "keywords": [
+        "laravel package development practice " ,
+        "nerdpanda" ,
+        "nerd",
+        "panda",
+        "nerdpanda.ir" ,
+        "mohammad reza shams " ,
+        "mohammad reza shams nerdpanda "
+    ],
+    "authors": [
+        {
+            "name": "NerdPanda",
+            "email": "nerdpandabusiness@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "NerdPanda\\": "src/" ,
+            "NerdPanda\\App\\" : "src/app/"
+        },
+        "files": [
+            "src/app/Helpers/nerdPanda.php"
+        ]
+    },
+    "autoload-dev": {
+
+    },
+    "scripts": {
+        "nerd-panda": "echo \" hello im NerdPanda !!\" "
+    },
+    "scripts-descriptions": {
+        "nerd-panda" : "who im ? "
+    },
+    "extra": {
+        "laravel" : {
+            "providers": [
+                "NerdPanda\\App\\Providers\\NerdPandaServiceProvider"
+            ],
+            "aliases" : {
+                "NerdPanda" : "NerdPanda\\App\\Facades\\NerdPandaFacade"
+            }
+        }
+    }
+}
